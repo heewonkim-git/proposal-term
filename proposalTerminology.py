@@ -28,7 +28,7 @@ def make_guide_from_proposal(proposal_text):
     client = OpenAI()
     
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=[
             {"role": "system", "content": """
              이 내용에서 통일해야 하는 용어 후보를 리스트업 후 각각에 대해서 통일할 용어를 추천해줘. 추천 단어를 AI로 한정 짓는 건 아니고 일관성 면을 고려해서 추천해줘 한글로 작성 
